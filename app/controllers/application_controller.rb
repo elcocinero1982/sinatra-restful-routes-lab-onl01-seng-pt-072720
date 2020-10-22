@@ -19,7 +19,7 @@ get '/' do
     erb :new
   end
 
-end
+
   post '/recipes' do # create action creating and saving new recipe based on params from form, then redirects to show page
     @recipe = Recipe.create(params)
 
